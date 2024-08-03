@@ -1,27 +1,7 @@
-```
- 			                    -- Virtual Traveller --
-				                      WIP
-	  APP IS IN THE VERY EARLY DEVELOPMENT PROGRESS - AND DOESN'T REPRESENT THE FINAL STATE
-```
-
 # Virtual Traveller
-![Build](https://img.shields.io/badge/Framework-Flutter-blue.svg)&nbsp;&nbsp;&nbsp;&nbsp;![Build](https://github.com/mzdm/virtual_traveller_flutter/workflows/build/badge.svg) [![codecov](https://codecov.io/gh/mzdm/virtual_traveller_flutter/branch/master/graph/badge.svg)](https://codecov.io/gh/mzdm/virtual_traveller_flutter)
+![Build](https://img.shields.io/badge/Framework-Flutter-blue.svg)&nbsp;&nbsp;&nbsp;&nbsp;![Build](https://github.com/jswebguru/virtual_traveller/workflows/build/badge.svg) [![codecov](https://codecov.io/gh/jswebguru/virtual_traveller/branch/master/graph/badge.svg)](https://codecov.io/gh/jswebguru/virtual_traveller)
 
 Search for flights and deep dive into large offers of travelling destinations. Discover recommended and popular places. Hop on on the virtual mode to simulate travelling immediately to your desired destination and learn more about it, including interesting information and points of interests! 🚀
-
-## Index
-- [Previews](https://github.com/mzdm/virtual_traveller_flutter#previews)
-- [How to run](https://github.com/mzdm/virtual_traveller_flutter#how-to-run)
-- [Idea](https://github.com/mzdm/virtual_traveller_flutter#idea)
-- [Visualizing the flow of the app](https://github.com/mzdm/virtual_traveller_flutter#visualizing-the-flow-of-the-app)
-- [State management](https://github.com/mzdm/virtual_traveller_flutter#state-management)
-- [App Architecture](https://github.com/mzdm/virtual_traveller_flutter#app-architecture)
-- [TODO list](https://github.com/mzdm/virtual_traveller_flutter#todo-list)
-- [Dependencies](https://github.com/mzdm/virtual_traveller_flutter#dependencies)
-- [UI inspirations](https://github.com/mzdm/virtual_traveller_flutter#ui-inspirations)
-- [Related recommended resources](https://github.com/mzdm/virtual_traveller_flutter#related-recommended-resources)
-- [Credits](https://github.com/mzdm/virtual_traveller_flutter#credits)
-- [Contribution](https://github.com/mzdm/virtual_traveller_flutter#contribution)
 
 ## Previews
 <p align="left">
@@ -75,7 +55,7 @@ I wanted to make a flight searching app with interesting suggestions, fully from
 Powered by the [Amadeus for Developers API](https://developers.amadeus.com/), which fits best for this use and offers also free monthly quota for testing! Amadeus Travel APIs connect you to the richest information in the travel industry.
 
 ## Visualizing the flow of the app
-![visualizing the flow of the app](https://github.com/mzdm/virtual_traveller_flutter/blob/master/github_images/visualmap.png)
+![visualizing the flow of the app](https://github.com/jswebguru/virtual_traveller/blob/master/github_images/visualmap.png)
 
 ## App Architecture
 Using the bloc library allows us to separate our application into three layers:
@@ -102,104 +82,6 @@ The reasons why I decided to use the bloc library in my case were following:
 - use of the reactive streams, which goes well together with BLoC pattern
 - easy and reliable tests via bloc_test library, which is based on Mockito
 - it isn't only a state management library, but it also helps implement the BLoC (Business Logic Component) design pattern
-
-## TODO list
-### Basics:
-- [ ] Features
-  - [ ] Splash screen
-  - [ ] Intro slider on the first app launch
-  - [ ] Home Page Features
-    - [x] Change departure location
-    - [ ] Quick search
-        - [x] One-Way flights
-        - [x] Destinations
-    - [x] Discover most popular / booked travelling destinations based on the current location
-    - [ ] Recommended destinations based on search history
-  - [ ] Flight Searching Page Features
-    - [ ] View search history
-    - [ ] Search by
-      - [x] Type of the way
-        - [x] One-Way
-        - [x] Round Trip
-        - [ ] Multi City
-      - [ ] Dates
-        - [ ] Departure
-        - [ ] Return
-      - [x] Passengers
-        - [x] Adults
-        - [x] Kids
-        - [x] Infants
-  - [ ] Flight Result Page Features
-      - [ ] Switch departure and destination in the search
-      - [ ] Display quick search query info details
-      - [ ] View more about the destination
-      - [ ] Sort by
-        - [ ] Price
-        - [ ] Length
-        - [ ] Number of stops
-      - [ ] Flight offer details
-        - [ ] From - To
-        - [ ] Departure - Arrival date
-        - [ ] Flight length
-        - [ ] Flight stops
-        - [ ] Passengers
-        - [ ] Price
-        - [ ] Airplane type
-      - [ ] Virtual Flight Mode
-        - [ ] Simulate airplane flying on the map with the timestamps
-  - [ ] Destination Info Page
-      - [ ] Save destination to the Watchlist
-      - [ ] Pictures
-      - [ ] Average temperature of the past week
-      - [x] Safety Rating
-      - [x] List nearby Points of Interests Page
-        - [x] POI Details Page
-            - [x] GPS Coordinates
-            - [x] Pictures
-      - [x] List nearby Hotels Page
-        - [ ] Hotel Details Page
-            - [ ] GPS Coordinates
-            - [ ] Distance from the city center
-            - [ ] Stars
-            - [ ] Description
-            - [ ] Pictures
-            - [ ] Tags: Amenities (Wi-Fi, TV, ...), Appliances etc.
-  - [ ] Watchlist Page
-    - [x] Click to view the info about the destination
-    - [ ] Drag to reorder destinations
-    - [ ] Swipe to remove
-  - [ ] Settings Page
-    - [ ] Change default departure location
-    - [ ] Language
-    - [ ] Currency
-    - [ ] Temperature format
-    - [ ] Length unit
-    - [ ] Theme
-    - [ ] Remove local data
-- [ ] Language Support
-  - [x] English
-  - [x] Czech
-  - [ ] Portuguese
-  - [ ] Russian
-  - [ ] Chinese
-  - [ ] French
-  - [ ] German
-- [x] Supported Platforms
-  - [x] Mobile (Android & iOS)
-  - [x] Web
-  - [x] Desktop
-
-### Other:
-- [x] Null safety
-- [x] CI / Github Actions
-- [x] Type of tests
-  - [x] Unit
-  - [x] Widget
-  - [x] Integration
-- [ ] Test coverage milestones
-  - [x] 20%
-  - [ ] 40%
-  - [ ] 60%
 
 ## Dependencies:
 - #### Common packages:
@@ -236,8 +118,3 @@ The reasons why I decided to use the bloc library in my case were following:
 
 ## Credits
 - [Unsplash](https://unsplash.com/) (Asset Images)
-
-## Contribution
-The app is still in the development process and isn't suitable for contributions yet.
-
-~~If you wish to contribute, file an issue with an appropriate tag or propose a PR. If it is a breaking change, please create an issue first.~~
