@@ -1,5 +1,4 @@
 # Virtual Traveller
-![Build](https://img.shields.io/badge/Framework-Flutter-blue.svg)&nbsp;&nbsp;&nbsp;&nbsp;![Build](https://github.com/jswebguru/virtual_traveller/workflows/build/badge.svg) [![codecov](https://codecov.io/gh/jswebguru/virtual_traveller/branch/master/graph/badge.svg)](https://codecov.io/gh/jswebguru/virtual_traveller)
 
 Search for flights and deep dive into large offers of travelling destinations. Discover recommended and popular places. Hop on on the virtual mode to simulate travelling immediately to your desired destination and learn more about it, including interesting information and points of interests! 🚀
 
@@ -55,7 +54,7 @@ I wanted to make a flight searching app with interesting suggestions, fully from
 Powered by the [Amadeus for Developers API](https://developers.amadeus.com/), which fits best for this use and offers also free monthly quota for testing! Amadeus Travel APIs connect you to the richest information in the travel industry.
 
 ## Visualizing the flow of the app
-![visualizing the flow of the app](https://github.com/jswebguru/virtual_traveller/blob/master/github_images/visualmap.png)
+![visualizing the flow of the app](github_images/visualmap.png)
 
 ## App Architecture
 Using the bloc library allows us to separate our application into three layers:
@@ -66,14 +65,6 @@ Using the bloc library allows us to separate our application into three layers:
   - Repository
   - Data Provider
   - Models
-
-<p align="center">
-<img height="170" width="auto" src="https://bloclibrary.dev/assets/bloc_architecture_full.png" />
-</p>
-
-<p align="center">
-<img height="170" width="auto" src="https://bloclibrary.dev/assets/cubit_architecture_full.png" />
-</p>
 
 ## State management 
 There's no unique rule on what to choose because it always depends on many criteria. When it came to deciding on which state management approach to use in my case, I was deciding between Provider and bloc library. Bloc library is already dependant on Provider package so it is fairly similar in terms of a dependency injection (DI) (a single instance of a Cubit or Bloc can be provided to all of the widgets within a subtree). [Read more here about bloc library](https://bloclibrary.dev/#/) and [Provider](https://pub.dev/packages/provider).
